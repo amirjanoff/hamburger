@@ -1,0 +1,160 @@
+.header-inner {
+  background-image: url(../../img/restaruant-bg.png);
+  width: 1440px;
+  height: 800px;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+
+  @media (max-width:$tablet) {
+    background-image: url(../../img/restaruant-bg.png);
+    width: 320px;
+    height: 800px;
+    background-position: center;
+    object-fit: fill;
+  }
+
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @media (max-width:$tablet) {
+      .header-img {
+        width: 50px;
+        height: 33px;
+      }
+      .header-inner__navigation {
+        display: none;
+      }
+    }
+
+    .telephone {
+
+       a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: $color-second;
+
+        h3 {
+        @include margin;
+        }
+       }
+
+       p {
+        color: $color-second;
+        max-width: 154px;
+        @include margin;
+        @include navigation;
+        font-weight: 400;
+
+       }
+    }
+    li {
+      list-style: none;
+    }
+
+
+    nav {
+      display: flex;
+      align-items: start;
+      gap: 34px;
+  
+    }
+
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @include margin;
+    
+    li {
+      a {
+        transition: .3 ease;
+        @include navigation;
+        color:$color-second;
+
+        &:hover {
+          color: $color-third;
+          opacity: .8;
+        }
+      }
+     
+    }
+
+    .line {
+      display: block;
+      width: 1px;
+      height: 51px;
+      background-color: #fff;
+    }
+  }
+
+  .btn {
+    display: inline-block;
+    color: $color-second;
+    transition: .3s ease;
+    &-primary {
+    background-color:$color-third;
+   
+    @include margin;
+    @include navigation;
+    padding: 14px 18px;
+
+
+    }
+
+    &:hover {
+      background-color:$color-second;
+      color:$color-third;
+    }
+  }
+
+  &__text {
+    padding: 204px 175px 231px;
+    h2 {
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 57.5px;
+      color:$color-third ;
+      @include margin;
+      font-family: $font-second;
+    }
+    h3 {
+      font-weight: 400;
+      font-family: $font-second;
+      font-size: 80px;
+      line-height: 92px;
+      color:$color-third ;
+      @include margin;
+    }
+    .line-text {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-align: center;
+      margin: 12px 100px 21px;
+      span {
+        display: block;
+        background-color:rgba(196, 196, 196, 1);
+        width: 61px;
+        height: 2px;
+      }
+      p {
+        @include margin;
+        color:$color-second;
+        @include text400;
+
+
+      }
+
+    }
+    .menu {
+      margin: 0 180px;
+      padding: 14px 28px;
+    }
+
+  }
+  
+}

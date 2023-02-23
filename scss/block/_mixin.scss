@@ -1,0 +1,32 @@
+@mixin navigation {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  font-family: $font-primary;
+}
+
+@mixin text400 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.5px;
+  font-family: $font-primary;
+}
+
+@mixin fontTinos {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  font-family: $font-second;
+}
+
+@mixin fontSans {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.79px;
+  font-family: $font-primary;
+}
+
+@mixin margin {
+  margin: 0;
+  padding: 0;
+}
